@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 900px) {
+    section {
+        display: block;
+    }
+    
+    /* SECTION HOME */
+
+    .capa {
+        display: block;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: auto;
+    }
+
+    .capa .txt-dinamico {
+        overflow: visible;
+    }
+
+    .txt-dinamico li {
+        animation: none;
+    }
+
+    .txt-dinamico li::after {
+        display: none;
+    }
+
+
+    /* SECTION SOBRE */
+
+    #sobre img {
+        display: none;
+    }
+
+    #sobre h2 {
+        padding-top: 10px;
+    }
+    
+    #projetos {
+        height: auto;
+        overflow: hidden;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    .cards {
+        display: block;
+    } 
+
+}

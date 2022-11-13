@@ -6,10 +6,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Roboto, Arial, Helvetica, sans-serif;
+
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;    
+    overflow-x: hidden;
 }
 
 h2 {
@@ -53,7 +55,7 @@ nav ul li a:hover {
 section {
     display: flex;
     width: 100%;
-    min-height: 100vh;
+    min-height: 100vh !important;
     justify-content: center;
     align-items: center;
 }
@@ -70,7 +72,13 @@ section article {
     align-items: center;
     justify-content: center;
     display: flex;
+    background: url("../imagens/endless-constellation.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
+
+/* background by SVGBackgrounds.com */
 
 .capa {
     align-items: center;
@@ -139,15 +147,17 @@ section article {
 }
 
 /* ESTILO SECTION SOBRE */
+
 #sobre article {
     display: flex;
     width: 100vw;
 }
 
-.descricao {
-    width: 100%;
+.descricao h1, p{
+    width: 80%;
     padding: 10px;
     margin-right: 2%;
+    margin: auto;
 }
 
 .descricao p {
@@ -162,9 +172,12 @@ section article {
 
 /* ESTILO SECTION PROJETOS */
 
+#projetos {
+    display: flex;
+}
+
 .cards {
-    margin: 0 auto;
-    padding-top: 3%;
+    margin: auto;
     max-width: 80%;
     cursor: pointer;
     display: grid;
@@ -172,10 +185,10 @@ section article {
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     justify-content: center;
+    align-items: center;
 }
 
 .cards figure img {
-    display: grid;
     max-width: 100%;
     max-height: 100%;
     border-radius: 10px;
@@ -205,6 +218,7 @@ section article {
 
 #contato {
     text-align: center;
+    display: flex;
 }
 
 .social-media {
@@ -236,8 +250,16 @@ section article {
 
 /* ESTILO RODAPÉ */
 
-footer h2 {
+footer {
+    display: flex;
+}
+
+footer p {
     color: black;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* CORES DIFERENTES DE BACKGROUND PARA CADA SECTION */

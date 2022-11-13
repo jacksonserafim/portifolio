@@ -72,7 +72,7 @@ section article {
     align-items: center;
     justify-content: center;
     display: flex;
-    background: url("../imagens/endless-constellation.png");
+    background: url("Static/imagens/endless-constellation.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
